@@ -1,0 +1,225 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+
+body {
+	background-image: linear-gradient(to bottom, #6a9496 0%, #FFFFFF 100%);
+	font-family: Arial;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#EEEEEE;
+}
+
+.header {
+	background-image: linear-gradient(to bottom, #000000b7 0%, #151515B7 45%, #080808B7 46%, #1A1F23B7 100%);
+
+	padding-left: 400px;
+	padding-right: 420px;
+	height: 90.88px;
+	overflow: hidden;
+
+	img {
+		height: 115px;
+		width: 115px;
+	}
+}
+
+.nav {
+	margin: 0px;
+	padding: 10px 140px;
+
+	background-image: linear-gradient(to bottom, #000000 0%, #151515 45%, #080808 46%, #1A1A1A 100%);
+	box-shadow: 3px 0px 5px #0A0A0A;
+
+	a {
+		padding: 10px 5px;
+		margin: 0px;
+	}
+
+	a:link {
+		color: #D0D0D0;
+	}
+
+	a:hover {
+		background-image: linear-gradient(to bottom, #da7414 0%, #dd832f 45%, #d17825 46%, #cc8953 100%);
+		color: #FFFFFF;
+	}
+
+	a:active {
+		background-image: linear-gradient(to bottom, #42da14 0%, #42832f 45%, #427825 46%, #5bbb71 100%);
+		color: #FFFFFF;
+	}
+}
+
+.navDropContainer {
+	position: relative;
+	display: inline-block;
+	border: none;
+}
+
+.navDropContainer a {
+	margin: 0px;
+}
+
+.navDrop {
+	background-image: linear-gradient(to bottom, #111111D3 0%, #222222D3 100%);
+	box-shadow: 0px 0px 5px #0A0A0A;
+
+	top: 25px;
+	padding-top: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 30px;
+	width: 220px;
+
+	border: none;
+	display: none;
+	position: absolute;
+
+	z-index: 2;
+
+	a {
+		display: block;
+	}
+}
+
+.navDropContainer:hover .navDrop {
+	display: block;
+}
+
+
+.content {
+	padding-left: 140px;
+	padding-right: 140px;
+	padding-bottom: 20px;
+
+	border: none;
+
+	color: #000000;
+}
+
+.videoinfo {
+	padding-left:585px;
+	border: none;
+}
+
+.footer {
+	height: 220px;
+
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-left: 140px;
+	padding-right: 140px;
+
+	border: none;
+
+	background-image: linear-gradient(to bottom, #000000 0%, #151515 45%, #080808 46%, #1A1A1A 100%);
+	box-shadow: 0px 5px 15px #0A0A0A;
+}
+
+div {
+	padding-left: 5px;
+	border: 1px solid black;
+}
+
+h1 {
+	padding: 5px;
+}
+
+h2 {
+	margin-left: 30px;
+}
+
+h3 {
+	font-size: 170%;
+}
+
+h6 {
+	margin-left: 35px;
+}
+
+p {
+	margin-left: 20px;
+}
+
+img {
+	border: 2px solid black;
+	width: 15%;
+}
+
+iframe {
+	float: left;
+}
+
+a:link {
+	color: skyblue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: deepskyblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+a:active {
+	color: lime;
+	text-decoration: none;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: snow;
+}
+
+@media screen and (max-width: 1200px)
+{
+	.header {
+		background-image: linear-gradient(to bottom, #000000b7 0%, #151515B7 45%, #080808B7 46%, #1A1F23B7 100%);
+		position: fixed;
+		width: 100%;
+		height: 90.88px;
+
+		padding-left: 20px;
+		padding-right: 40px;
+
+		img {
+			height: 110px;
+			width: 110px;
+		}
+	}
+
+	.nav {
+		position: sticky;
+		top: 90.88px;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.content {
+		margin-top: 130.88px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.videoinfo {
+		padding-left: 0px;
+	}
+
+	iframe {
+		float: none;
+	}
+}
